@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(53, 172, 251);
+    padding: 8px;
+    color: rgb(0, 23, 58);
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title {
+    display: flex;
+    gap: 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4px;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 16px;
+    gap: 16px;
+}
+
+.card {
+    border: 1px solid;
+}
+
+.card > .title, .card > .card-content {
+    padding: 8px;
+}
+
+.image-banner {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    color: rgb(67, 67, 67);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.read-more {
+    background-color: rgb(55, 193, 87);
+    padding: 8px 16px;
+    border: none;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.read-more:hover {
+    background-color: rgb(12, 114, 12);
+    color: white;
+}

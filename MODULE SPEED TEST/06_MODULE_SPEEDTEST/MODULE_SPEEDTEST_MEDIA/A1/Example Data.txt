@@ -1,0 +1,19 @@
+Silver Pack
+$4/month
+Deploy in seconds
+Scale up on demand
+Run any workload - from mission critical apps to low traffic sites
+
+
+Gold Pack
+$12/month
+Simple, managed Kubernetes built for scale
+Free control plane, free bandwidth allowance, and more
+Automate and optimize to peak performance
+
+
+Platinum Pack
+$30/month
+Build, deploy and scale apps quickly
+Fully managed solution, zero infrastructure management
+Highly scalable

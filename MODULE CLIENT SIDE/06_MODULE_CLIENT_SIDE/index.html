@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="welcome" id="welcome">
+        <img src="./images/shooter.png" width="200px" alt="">
+        <input type="text" id="username" placeholder="Input username" required>
+        <select name="level" id="level" required>
+            <option value="" selected disabled>Select Level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <div class="input-gun">
+            <label class="gun-select">
+                <img src="./images/gun1.png" width="100px" alt="">
+                <input required type="radio" name="gun" id="gun1">    
+            </label>
+            <label class="gun-select">
+                <img src="./images/gun2.png" width="100px" alt="">
+                <input required type="radio" name="gun" id="gun2">    
+            </label>
+        </div>
+        <div class="input-target">
+            <label class="target-select">
+                <img src="./images/target1.png" width="80px">
+                <input required type="radio" name="target" id="target1" value="target1">    
+            </label>
+            <label class="target-select">
+                <img src="./images/target2.png" width="80px">
+                <input required type="radio" name="target" id="target2" value="target2">    
+            </label>
+            <label class="target-select">
+                <img src="./images/target3.png" width="80px">
+                <input required type="radio" name="target" id="target3" value="target3">    
+            </label>
+        </div>
+        <div class="btn-group">
+            <button class="play-btn disable" type="submit">Play Game</button>
+            <button class="instruction-btn">Instruction</button>
+        </div>
+    </form>
+    <div class="game hide" id="game">
+        <div class="game-info">
+            <div class="info-item">
+                <p>
+                    Name:
+                </p>
+                <p id="player-name">Hasban</p>
+            </div>
+            <div class="info-item">
+                <p>
+                    Score: 
+                </p>
+                <p id="score">0</p>
+            </div>
+            <div class="info-item">
+                <p>
+                    Time:
+                </p>
+                <p>00:<span id="timer">30</span></p>
+            </div>
+        </div>
+        <canvas width="1000px" height="600px"></canvas>
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <select name="sortedBy" id="sortedBy" class="sort-input">
+                <option value="score" selected>Sort by Score</option>
+                <option value="time" selected>Sort by time</option>
+            </select>
+            <div class="scores-board">
+                <div class="score-item">
+                    <div class="score-info">
+                        <h3>Thomas Galis</h3>
+                        <p>Score: 44</p>
+                    </div>
+                    <button class="btn-score-detail">Detail</button>
+                </div>
+                <div class="score-item">
+                    <div class="score-info">
+                        <h3>Thomas Galis</h3>
+                        <p>Score: 44</p>
+                    </div>
+                    <button class="btn-score-detail">Detail</button>
+                </div>
+                <div class="score-item">
+                    <div class="score-info">
+                        <h3>Thomas Galis</h3>
+                        <p>Score: 44</p>
+                    </div>
+                    <button class="btn-score-detail">Detail</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
